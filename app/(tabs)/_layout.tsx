@@ -38,7 +38,14 @@ export default function TabLayout() {
         name="modalidades"
         options={{
           title: 'Modalidades',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="sportscourt.circle" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="alojamentos"
+        options={{
+          title: 'Alojamentos',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="bed.double.fill" color={color} />,
         }}
       />
     </Tabs>
