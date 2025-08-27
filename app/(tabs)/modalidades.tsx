@@ -98,7 +98,6 @@ export default function ModalidadesScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
     backgroundColor: '#222',
     gap: 24,
   },

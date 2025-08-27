@@ -1,7 +1,7 @@
 import { useLocalSearchParams } from 'expo-router';
 import { StyleSheet, Text, View, Image, ScrollView, Linking, TouchableOpacity } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
-import { alojamentos } from '../alojamentos';
+import { alojamentos } from '../(tabs)/alojamentos';
 
 export default function AlojamentoDetalheScreen() {
   const { id } = useLocalSearchParams();

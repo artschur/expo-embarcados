@@ -18,6 +18,9 @@ export default function TabLayout() {
         headerShown: false,
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
+        sceneStyle: {
+          paddingVertical: 64, // <--- GLOBAL PADDING FOR ALL TAB SCREENS
+        },
         tabBarStyle: Platform.select({
           ios: {
             // Use a transparent background on iOS to show the blur effect
@@ -46,6 +49,13 @@ export default function TabLayout() {
         options={{
           title: 'Alojamentos',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="bed.double.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="jogos"
+        options={{
+          title: 'Jogos',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="soccerball.circle" color={color} />,
         }}
       />
     </Tabs>

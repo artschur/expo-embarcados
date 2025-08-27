@@ -204,7 +204,6 @@ export default function JogosScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 24,
     gap: 16,
     paddingBottom: 64,
   },

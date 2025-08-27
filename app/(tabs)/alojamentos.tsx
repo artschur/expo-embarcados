@@ -101,7 +101,7 @@ export default function AlojamentosScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 16, gap: 24 },
+  container: { gap: 24 },
   header: { fontSize: 28, fontWeight: 'bold', marginBottom: 16, textAlign: 'center' },
   card: {
     backgroundColor: '#222',
