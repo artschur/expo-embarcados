@@ -70,18 +70,18 @@ export default function AlojamentoDetalheScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 24, paddingTop: 64, alignItems: 'flex-start', backgroundColor: '#f9f9f9' },
+  container: { padding: 24, paddingTop: 64, alignItems: 'flex-start', backgroundColor: '#222' },
   fotosContainer: { flexDirection: 'row', marginBottom: 16 },
   foto: { width: 450, height: 400, borderRadius: 12, marginRight: 12, backgroundColor: '#eee' },
-  nome: { fontSize: 26, fontWeight: 'bold', marginBottom: 8 },
-  tipo: { fontSize: 18, color: '#555', marginBottom: 4 },
-  localizacao: { fontSize: 16, color: '#888', marginBottom: 8 },
-  descricao: { fontSize: 16, color: '#333', textAlign: 'left', marginBottom: 8 },
+  nome: { fontSize: 26, fontWeight: 'bold', marginBottom: 8, color: '#fff' },
+  tipo: { fontSize: 18, color: '#ccc', marginBottom: 4 },
+  localizacao: { fontSize: 16, color: '#ccc', marginBottom: 8 },
+  descricao: { fontSize: 16, color: '#eee', textAlign: 'left', marginBottom: 8 },
   valorDiaria: { fontSize: 18, color: '#007b00', fontWeight: 'bold', marginBottom: 12 },
   mapa: { width: '100%', height: 200, borderRadius: 12, marginBottom: 16 },
-  contatoContainer: { width: '100%', marginTop: 12, backgroundColor: '#fff', borderRadius: 8, padding: 12 },
+  contatoContainer: { width: '100%', marginTop: 12, backgroundColor: '#222', borderRadius: 8, padding: 12 },
   contatoTitulo: { fontSize: 18, fontWeight: 'bold', marginBottom: 6 },
-  contato: { fontSize: 16, color: '#333', marginBottom: 4 },
+  contato: { fontSize: 16, color: '#eee', marginBottom: 4 },
   appButton: {
     width: '100%',
     padding: 12,
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   appButtonText: {
-    color: '#fff',
+    color: '#222',
     fontSize: 16,
     fontWeight: 'bold',
   },
