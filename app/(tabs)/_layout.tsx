@@ -19,6 +19,7 @@ export default function TabLayout() {
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
         sceneStyle: {
+          paddingHorizontal: 16, // <--- GLOBAL PADDING FOR ALL TAB SCREENS
           paddingVertical: 64, // <--- GLOBAL PADDING FOR ALL TAB SCREENS
         },
         tabBarStyle: Platform.select({

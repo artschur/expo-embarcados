@@ -100,7 +100,7 @@ const light = {
 };
 
 const dark = {
-  background: '#181818',
+  background: '#000',
   card: '#232323',
   border: '#333',
   text: '#f6f5f4',
