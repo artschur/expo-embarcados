@@ -1,13 +1,13 @@
 import { useRouter } from 'expo-router';
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-interface Modalidades {
+export interface Modalidades {
   id: number;
   nome: string;
   imagem: string;
 }
 
-const modalidadesToShow: Modalidades[] = [
+export const modalidadesToShow: Modalidades[] = [
   {
     id: 1,
     nome: 'Futebol',

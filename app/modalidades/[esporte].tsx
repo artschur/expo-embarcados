@@ -3,7 +3,8 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useState } from 'react';
-import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { modalidadesToShow } from '../(tabs)/modalidades';
 
 const light = {
   background: '#f6f5f4',
@@ -33,8 +34,18 @@ export default function ModalidadeEsporteScreen() {
   const colorScheme = useColorScheme();
   const theme = colorScheme === 'dark' ? dark : light;
   const router = useRouter();
+  console.log(esporte);
 
-  // Filter matches by sport
+  if (!esporte) {
+    router.push('/modalidades');
+  }
+
+  if (!modalidadesToShow) {
+    router.push('/modalidades');
+  }
+
+  const modalidadeImage = modalidadesToShow.find((modalidade) => modalidade.nome.toLowerCase() === esporte)?.imagem;
+
   const partidasEsporte = partidas.filter(
     (partida) => partida.esporte.toLowerCase() === (esporte as string).toLowerCase(),
   );
@@ -73,6 +84,7 @@ export default function ModalidadeEsporteScreen() {
 
   return (
     <View style={[styles.modalContainer, { backgroundColor: theme.background }]}>
+      <Image source={{ uri: modalidadeImage }} style={{ width: '100%', height: 200 }} />
       <ScrollView contentContainerStyle={[styles.container, { backgroundColor: theme.background }]}>
         {partidasInteresse.length > 0 && (
           <>
